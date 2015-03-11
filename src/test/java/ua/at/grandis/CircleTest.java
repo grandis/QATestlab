@@ -38,4 +38,12 @@ public class CircleTest extends Assert{
         assertTrue(temp == 31.41592653589793);
     }
 
+    @Test
+    public void testGetColor(){
+        Circle circle = new Circle(5, "black");
+        String temp = circle.getColor();
+
+        assertTrue(temp.equals("black"));
+    }
+
 }
